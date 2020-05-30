@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link href="css/bootstrap.css" rel="stylesheet" type='text/css' />
+  <title>LM Developer Relations</title>
+</header>
+<body>
+    <nav class="navbar navbar-fixed-top justify-content-center" style="background-color: #ffd000 ; height: 60px; margin: 0, 10px, 0, 10px; ">
+      <div>
+          <ul class="nav" >
+            <li><a href="http://www.libertymutual.com" >Liberty Mutual Home</a></li>
+            <li><a href="./index.html">Developer Relations Home</a></li>
+            <li><a href="./survey.html">Developer Survey</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <form action="/submit-survey">
+                    <label for="Name">Name<input id="Name" type="text" placeholder="Enter your name"></label></br>
+                    <label for="Email">Email<input id="Email" type="text" placeholder="Enter your Email"></label></br>
+                    <label for="NNumber">N-Number<input id="NNumber" type="text" placeholder="Enter your N-Number"></label></br>
+                    <label for="Age">Age(optional)<input id="Age" type="text" placeholder="Age"></label></br>
+
+                    <label for="option">Which option best describes your currrent role as it relates to IT?
+                        <select id="option" type="drop-down" placeholder="Select how your currrent role relates to IT">
+                            <option>Select how your currrent role relates to IT</option>
+                            <option>- I don't work in IT but I want to</option>
+                            <option>- I work in IT</option>
+                            <option>- I am a manager of IT personnel</option>
+                            <option>- Other</option>
+                    </label>
+                </br>
+                    <div>Would you recommend employment at Liberty Mutual to an IT
+                        professional?
+                    </div>
+                    <label for="definitely"><input id="definitely" type="radio" name="definitely-maybe-notsure" value="definitely" checked>Definitely</label>
+                    <label for="maybe"><input id="maybe" type="radio" name="definitely-maybe-notsure" value="maybe">Maybe</label>
+                    <label for="notsure"><input id="notsure" type="radio" name="definitely-maybe-notsure" value="notsure">Not Sure</label>
+
+                    <div>
+                        <label class="checkbox inline">
+                            <input type="checkbox" value="">
+                           React.js
+                        </label>
+                        <label class="checkbox inline">
+                            <input type="checkbox" value="">
+                            Microservices
+                        </label>
+                        <label class="checkbox inline">
+                            <input type="checkbox" value="">
+                            Golang
+                        </label>
+                        <label class="checkbox inline">
+                            <input type="checkbox" value="">
+                            Custom Middleware
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <footer class="container">
+    <p>Copyright &copy; by Liberty Mutual. All rights reserved</p>
+  </footer>
+ 
+</body>
+</html>
